@@ -1,0 +1,57 @@
+<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/0.4.1/html2canvas.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.4.1/jspdf.debug.js"></script>
+<script type="text/javascript" src='jspdf.js'></script>
+<div id="head">Header</div>
+<div id="someHtml" class="handsomeHtml">
+    <img class="crazyFrog" src="http://e-cdn-images.deezer.com/images/artist/01eb92fc47bb8fb09adea9f763bb1c50/500x500.jpg"/>
+    <hr>
+    <img src="http://e-cdn-images.deezer.com/images/artist/01eb92fc47bb8fb09adea9f763bb1c50/500x500.jpg">
+    <div id="high"></div>
+</div>
+<br />
+<div id="button_div">
+    <button id="savePDFbutton" onclick="savePDF()">
+        save pdf
+    </button>
+    <button onclick="PrintElem()">
+        button 2
+    </button>
+</div>
+<style type="text/css">
+#head {
+    position: fixed;
+    background-color: black;
+    color:white;
+    font-size: 25px;
+    text-align: center;
+    top:0;  
+    width: 100%;
+}
+#someHtml {
+    margin-top:50px;
+}
+img {
+    height: 800px;
+    width:auto;
+}
+hr {
+    color: red;
+    border-color: red;
+}
+#button_div {
+    z-index: 2;
+    position: fixed;
+    top: 50px;
+    right: 20px;
+}
+#high {
+    position: absolute;
+    top: 100px;
+    left: 100px;
+    width: 100px;
+    height: 50px;
+    background-color: rgba(255,0,0,0.6);
+}
+
+</style>
